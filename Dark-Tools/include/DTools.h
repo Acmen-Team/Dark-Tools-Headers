@@ -37,15 +37,12 @@ Description: DTools header file
 #define DKTOOLS_VERSION_MINOR 1
 #define DKTOOLS_VERSION_PATCH 0
 
-int GetDKToolsVersion()
-{
-    // MAJOR * 100 + MINOR * 10 + PATCH
-    return DKTOOLS_VERSION_MAJOR * 100 + DKTOOLS_VERSION_MINOR * 10 + DKTOOLS_VERSION_PATCH;
-}
+// Core
+#include <Core/Core.h>
 
 // Macro
-#include "Macro/DynamicLinkMacros.h"
+#include <Macro/DynamicLinkMacros.h>
 
 // Log
-#include "Logger/Logger.h"
+#include <Logger/Logger.h>
 
