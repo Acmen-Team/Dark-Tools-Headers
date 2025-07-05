@@ -24,13 +24,13 @@ Description: Logger
 **************************************************/
 #pragma once
 
+#include "ToolsAPI.h"
 #include "Core/Core.h"
-#include "Macro/DynamicLinkMacros.h"
 
 namespace DTools
 {
 
-	class DARK_API Logger
+	class DTOOLS_API Logger
 	{
 	public:
 		Logger(const char* tag);
@@ -45,13 +45,13 @@ namespace DTools
 
 	private:
 		// Pointer to Implementation (Pimpl)
-		class DARK_API LogImpl;
+		class DTOOLS_API LogImpl;
 		Scope<LogImpl> m_LogImpl;
 
 	};
 
-	DARK_API Ref<Logger> GetCoreLogger();
-	DARK_API Ref<Logger> GetClientLogger();
+  DTOOLS_API Ref<Logger> GetCoreLogger();
+  DTOOLS_API Ref<Logger> GetClientLogger();
 
 } // namespace DTools
 

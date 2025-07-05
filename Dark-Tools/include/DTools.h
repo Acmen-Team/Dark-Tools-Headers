@@ -40,9 +40,6 @@ Description: DTools header file
 // Core
 #include <Core/Core.h>
 
-// Macro
-#include <Macro/DynamicLinkMacros.h>
-
 // Log
 #include <Logger/Logger.h>
 
